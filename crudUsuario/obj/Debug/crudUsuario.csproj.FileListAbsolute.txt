@@ -1,0 +1,7 @@
+D:\crudUsuario\crudUsuario\bin\crudUsuario.dll.config
+D:\crudUsuario\crudUsuario\bin\crudUsuario.dll
+D:\crudUsuario\crudUsuario\bin\crudUsuario.pdb
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.csproj.AssemblyReference.cache
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.csproj.CoreCompileInputs.cache
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.dll
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.pdb

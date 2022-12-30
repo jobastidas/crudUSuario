@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="crudUSuarioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="sexo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="crudUSuarioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="usuario" EntityType="Self.usuario" />
+    <FunctionImport Name="actualizarUsuario">
+      <Parameter Name="p_id" Mode="In" Type="Int32" />
+      <Parameter Name="p_nombre" Mode="In" Type="String" />
+      <Parameter Name="p_fechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="p_sexo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="crearUsuario" ReturnType="Collection(Int32)">
+      <Parameter Name="p_nombre" Mode="In" Type="String" />
+      <Parameter Name="p_fechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="p_sexo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="eliminarUsuario">
+      <Parameter Name="p_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="leerUsuarios">
+      <Parameter Name="p_filtro" Mode="In" Type="String" />
+      <Parameter Name="p_orden" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

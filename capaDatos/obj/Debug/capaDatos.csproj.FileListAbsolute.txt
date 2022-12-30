@@ -1,0 +1,11 @@
+D:\crudUsuario\capaDatos\bin\Debug\capaDatos.dll.config
+D:\crudUsuario\capaDatos\bin\Debug\capaDatos.dll
+D:\crudUsuario\capaDatos\bin\Debug\capaDatos.pdb
+D:\crudUsuario\capaDatos\bin\Debug\EntityFramework.dll
+D:\crudUsuario\capaDatos\bin\Debug\EntityFramework.SqlServer.dll
+D:\crudUsuario\capaDatos\bin\Debug\EntityFramework.xml
+D:\crudUsuario\capaDatos\bin\Debug\EntityFramework.SqlServer.xml
+D:\crudUsuario\capaDatos\obj\Debug\capaDatos.csproj.CoreCompileInputs.cache
+D:\crudUsuario\capaDatos\obj\Debug\capaDatos.csproj.CopyComplete
+D:\crudUsuario\capaDatos\obj\Debug\capaDatos.dll
+D:\crudUsuario\capaDatos\obj\Debug\capaDatos.pdb

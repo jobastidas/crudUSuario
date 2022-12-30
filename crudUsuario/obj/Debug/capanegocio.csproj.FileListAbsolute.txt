@@ -1,0 +1,15 @@
+D:\crudUsuario\crudUsuario\bin\crudUsuario.dll.config
+D:\crudUsuario\crudUsuario\bin\crudUsuario.dll
+D:\crudUsuario\crudUsuario\bin\crudUsuario.pdb
+D:\crudUsuario\crudUsuario\bin\capaDatos.dll
+D:\crudUsuario\crudUsuario\bin\EntityFramework.dll
+D:\crudUsuario\crudUsuario\bin\EntityFramework.SqlServer.dll
+D:\crudUsuario\crudUsuario\bin\capaDatos.pdb
+D:\crudUsuario\crudUsuario\bin\capaDatos.dll.config
+D:\crudUsuario\crudUsuario\bin\EntityFramework.xml
+D:\crudUsuario\crudUsuario\bin\EntityFramework.SqlServer.xml
+D:\crudUsuario\crudUsuario\obj\Debug\capaNegocio.csproj.AssemblyReference.cache
+D:\crudUsuario\crudUsuario\obj\Debug\capaNegocio.csproj.CoreCompileInputs.cache
+D:\crudUsuario\crudUsuario\obj\Debug\capaNegocio.csproj.CopyComplete
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.dll
+D:\crudUsuario\crudUsuario\obj\Debug\crudUsuario.pdb

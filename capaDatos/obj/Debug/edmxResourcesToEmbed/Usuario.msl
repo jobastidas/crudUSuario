@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="crudUSuarioModelStoreContainer" CdmEntityContainer="crudUSuarioEntities">
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="crudUSuarioModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="actualizarUsuario" FunctionName="crudUSuarioModel.Store.actualizarUsuario" />
+    <FunctionImportMapping FunctionImportName="crearUsuario" FunctionName="crudUSuarioModel.Store.crearUsuario" />
+    <FunctionImportMapping FunctionImportName="eliminarUsuario" FunctionName="crudUSuarioModel.Store.eliminarUsuario" />
+    <FunctionImportMapping FunctionImportName="leerUsuarios" FunctionName="crudUSuarioModel.Store.leerUsuarios" />
+  </EntityContainerMapping>
+</Mapping>

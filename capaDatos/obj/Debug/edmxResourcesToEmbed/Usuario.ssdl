@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="crudUSuarioModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" />
+    <Property Name="fechaNacimiento" Type="date" />
+    <Property Name="sexo" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <Function Name="actualizarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_id" Type="int" Mode="In" />
+    <Parameter Name="p_nombre" Type="varchar" Mode="In" />
+    <Parameter Name="p_fechaNacimiento" Type="date" Mode="In" />
+    <Parameter Name="p_sexo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="crearUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_nombre" Type="varchar" Mode="In" />
+    <Parameter Name="p_fechaNacimiento" Type="date" Mode="In" />
+    <Parameter Name="p_sexo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="eliminarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="leerUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_filtro" Type="varchar" Mode="In" />
+    <Parameter Name="p_orden" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="crudUSuarioModelStoreContainer">
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
