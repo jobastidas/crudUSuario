@@ -10,17 +10,16 @@ namespace capaPresentacion
 {
     public partial class usuario : System.Web.UI.Page
     {
-        int id = 0;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 if (Request.QueryString["id"] != null)
                 {
-                    id = Convert.ToInt32(Request.QueryString["id"]);
                     using (UsuarioClient usuario = new UsuarioClient())
                     {
-                        UsuarioReference.usuario usu =  usuario.Leer(id);
+                        UsuarioReference.usuario usu =  usuario.Leer(Convert.ToInt16( Request.QueryString["id"]));
                         string nombre = usu.nombre;
                         txt_nombre.Text = nombre;
                         string fecha = usu.fechaNacimiento.Value.ToString("yyyy-MM-dd");

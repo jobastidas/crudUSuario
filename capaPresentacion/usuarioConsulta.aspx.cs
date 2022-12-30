@@ -44,6 +44,8 @@ namespace capaPresentacion
             foreach (GridViewRow row in grd_usuario.Rows)
             {
                 Label lbl_usuario = (Label)row.FindControl("lbl_sexo");
+                Button btn = (Button)row.FindControl("btn_eliminar");
+                btn.OnClientClick = "javascript:if(!confirm('¿Está seguro de eliminar este registro?')){return false};";
                 if (lbl_usuario.Text == "M")
                 {
                     lbl_usuario.Text = "Masculino";

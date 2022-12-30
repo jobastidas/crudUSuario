@@ -24,13 +24,13 @@ namespace capaPresentacion
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control Label1.
+        /// Control lbl_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lbl_nombre;
 
         /// <summary>
         /// Control txt_nombre.
@@ -42,22 +42,31 @@ namespace capaPresentacion
         protected global::System.Web.UI.WebControls.TextBox txt_nombre;
 
         /// <summary>
-        /// Control rfv_documento_nombre.
+        /// Control rfv_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_documento_nombre;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_nombre;
 
         /// <summary>
-        /// Control Label2.
+        /// Control rev_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_nombre;
+
+        /// <summary>
+        /// Control lbl_fechaNacieminto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_fechaNacieminto;
 
         /// <summary>
         /// Control txt_fecha.
@@ -78,13 +87,13 @@ namespace capaPresentacion
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_fecha;
 
         /// <summary>
-        /// Control Label3.
+        /// Control lbl_sexo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lbl_sexo;
 
         /// <summary>
         /// Control drp_sexo.
